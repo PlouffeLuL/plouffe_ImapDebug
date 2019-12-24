@@ -130,7 +130,7 @@ Citizen.CreateThread(function()
             for i=1, #ipls, 1 do 
                 chatPrint(ipls[i])
                 Citizen.InvokeNative(0x5A3E5CF7B4014B96,ipls[i])
-                Wait(1000)
+                Wait(10)
                 if stop then break end
             end
             Unload = not Unload
